@@ -135,6 +135,7 @@ header {
   border: none;
   margin-right: 90px;
   box-sizing: border-box;
+  text-decoration: none;
 }
 .headerBtn svg {
   margin-right: 8px;
