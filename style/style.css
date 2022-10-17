@@ -238,9 +238,100 @@ h1 span {
   margin-top: 21px;
 }
 /*Delicious-------------------------*/ 
+main {
+  background: url(../img/mainBackground.png), #393A35;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.delicious {
+  padding: 144px 88px 250px 88px;
+  max-width: 1336px;
+  margin: 0 auto;
+}
+.deliciousContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 512px;
+}
+.deliciousContainerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+.deliciousContainerLeft,
+.deliciousContainerRight {
+  width: 25%;
+}
+.deliciousContainerCenter {
+  width: 50%;
+  position: absolute;
+  top: 65%;  
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+.deliciousContainerCenter img{
+  max-width: 100%;
+}
+.deliciousContainer h2 {
+  font-family: "Montserrat-SemiBold";
+  font-size: 36px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+.deliciousContainer h2 span {
+  font-family: "Montserrat-SemiBold";
+  font-size: 36px;
+  line-height: 130%;
+  color: #84B24E;
+}
+.deliciousContainerLeft,
+.deliciousContainerRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deliciousContainerLeft svg,
+.deliciousContainerRight svg {
+  margin-bottom: 28px;
+}
+.deliciousContainerLeft p,
+.deliciousContainerRight p {
+  text-align: center;
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  line-height: 170%;
+  color: #FFFFFF;
+  min-height: 300px;
+}
+.deliciousContainerLeft p span:nth-of-type(1) {
+  font-family: "Montserrat-Bold";
+}
+.deliciousContainerLeft p span:nth-of-type(2) {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  color: #84B24E;
+}
+.deliciousContainerRight p span{
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  color: #84B24E;
+}
 @media (min-width: 1440px) {
 .containerContact {
   width: 40%;
+}
+.deliciousContainerCenter {
+  left: 45%;
+}
+.deliciousContainerCenter img{
+  max-width: 120%;
+  min-width: 120%
 }
 }
 @media (max-width: 1200px) {
@@ -252,6 +343,18 @@ h1 span {
 }
 .box-container {
   right: 12%;
+}
+.delicious {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.delicious {
+  padding-bottom: 150px;
+}
+.deliciousContainerLeft,
+.deliciousContainerRight {
+  width: 40%;
+  z-index: 1;
 }
 }
 @media (max-width: 992px) {
@@ -279,6 +382,32 @@ header {
 }
 .benefitsContainer {
   padding: 0 15px;
+}
+.deliciousContainerCenter {
+  position: static;
+}
+.deliciousContainerWrapper {
+  flex-direction: column;
+}
+.deliciousContainer {
+  height: auto;
+}
+.delicious {
+  padding: 100px 50px 100px 50px;
+}
+.deliciousContainerLeft,
+.deliciousContainerRight {
+  width: 100%;
+}
+.deliciousContainer h2 {
+  margin-bottom: 100px;
+}
+.deliciousContainerLeft p,
+.deliciousContainerRight p{
+  min-height: 150px;
+}
+.deliciousContainerCenter {
+  transform: unset;
 }
 }
 @media (max-width: 768px) {
@@ -363,6 +492,30 @@ h1 span {
 }
 .benefitsContainer p {
   min-height: 100px;
+}
+.deliciousContainerCenter {
+  min-width: 150%;
+}
+.deliciousContainer h2 {
+  font-size: 24px;
+  margin-bottom: 64px;
+}
+.deliciousContainer h2 span {
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+.deliciousContainerLeft p,
+.deliciousContainerRight p {
+  text-align: left;
+  font-size: 16px;
+}
+.deliciousContainerLeft p span,
+.deliciousContainerRight p span {
+  font-size: 16px;
+}
+.delicious {
+  padding: 100px 16px;
 }
 }
 @media (max-width: 320px) {
