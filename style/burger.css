@@ -248,7 +248,9 @@
 .menu ul {
   padding-left: 68px;
 }
-
+.menu {
+  top: -200%;
+}
 }
 @media (max-width: 320px) {
 .menuSocialNetworks {
