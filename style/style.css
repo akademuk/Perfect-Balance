@@ -642,6 +642,70 @@ h6 {
   font-family: "Montserrat-Bold";
   text-decoration: none;
 }
+.form {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 64px 0;
+  background: #292929;
+}
+form input {
+  max-width: 245px;
+  min-width: 245px;
+  height: 56px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: 1px solid #ABB5BE;
+  padding-left: 12px;
+  font-family: "Inter-Regular";
+  font-size: 16px;
+  line-height: 21px;
+  color: #ABB5BE;
+}
+.formWrapper .businessModelTittle{
+  width: 100%;
+}
+input::placeholder {
+  font-family: "Inter-Regular";
+  font-size: 16px;
+  line-height: 21px;
+  color: #ABB5BE;
+}
+.formWrapper {
+  max-width: 1265px;
+  margin: 0 auto;
+}
+form {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submit {
+  max-width: 155px;
+  min-width: 155px;
+  height: 56px;
+  background: #F7DB50;
+  border-radius: 10px;
+  border: none;
+  padding-left: 0;
+  color: #000;
+  padding-right: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.submit::before {
+  content: "";
+  background: url(../img/arrow-right-circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  margin-right: 10px;
+}
 @media (max-width: 1440px) {
 .businessModelContainer {
   flex-direction: column;
@@ -651,6 +715,16 @@ h6 {
   margin-bottom: 50px;
   width: 70%;
 }
+}
+@media (max-width: 1300px) {
+  form {
+    flex-direction: column;
+  }
+  form input {
+    min-width: 50%;
+    max-width: 50%;
+    margin-bottom: 16px;
+  }
 }
 @media (min-width: 1440px) {
 .containerContact {
@@ -705,6 +779,9 @@ h6 {
 }
 .bannerContainer {
   max-width: 500px;
+}
+.form {
+  padding: 100px 50px;
 }
 .headerSocialNetworks {
   display: none;
@@ -863,6 +940,13 @@ header {
 }
 .menuSlider .slick-lists.draggable{
   padding: 0 !important;
+}
+.form {
+  padding: 100px 16px;
+}
+.form input {
+  max-width: 100%;
+  min-width: 100%;
 }
 .businessModelTittle h3 {
   font-size: 24px;
