@@ -706,6 +706,57 @@ form {
   display: flex;
   margin-right: 10px;
 }
+.package {
+  margin-top: 210px;
+  max-width: 1265px;
+  margin: 210px auto 0 auto;
+}
+.package .businessModelTittle {
+  width: 100%;
+}
+.packageContainer {
+  display: flex;
+  margin-top: 64px;
+  justify-content: space-between;
+
+}
+.packageCenter {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+.packageContainerCenter {
+  display: flex;
+}
+.packageContainerLeft img:nth-of-type(2), 
+.packageContainerRight img:nth-of-type(2) {
+  border-radius: 10px;
+}
+.packageCenterTop {
+  margin-bottom: 16px;
+}
+.packageCenterTop,
+.packageCenterBottom {
+  max-width: 322px;
+  height: 250px;
+  background: rgba(31, 31, 31, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0px -2px 4px rgba(132, 178, 78, 0.5), inset 0px 2px 4px #000000;
+  backdrop-filter: blur(7.5px);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+  text-align: center;
+}
+.packageCenterTop svg,
+.packageCenterBottom svg {
+  margin-bottom: 15px;
+}
+.mobileImg {
+  display: none;
+}
 @media (max-width: 1440px) {
 .businessModelContainer {
   flex-direction: column;
@@ -733,6 +784,9 @@ form {
 .deliciousContainerCenter {
   left: 45%;
 }
+.package {
+  max-width: 1500px;
+}
 .deliciousContainerCenter img{
   max-width: 120%;
   min-width: 120%
@@ -745,6 +799,9 @@ form {
 .containerContact {
   width: 70%;
 }
+.packageContainerCenter {
+  margin: 16px 0;
+}
 .box-container {
   right: 12%;
 }
@@ -754,6 +811,16 @@ form {
 }
 .delicious {
   padding-bottom: 150px;
+}
+.mobileImg {
+  display: block;
+  border-radius: 10px;
+}
+.packageContainerRight img:nth-of-type(2) {
+  display: none;
+}
+.packageContainerLeft img:nth-of-type(2) {
+  display: none;
 }
 .deliciousContainerLeft,
 .deliciousContainerRight {
@@ -771,6 +838,11 @@ form {
 }
 .businessModelContainerLeft {
   width: 100%;
+}
+.packageContainer {
+  flex-direction: column;
+  padding: 0 50px;
+  align-items: center;
 }
 }
 @media (max-width: 992px) {
@@ -937,6 +1009,32 @@ header {
 .businessModel {
   padding-left: 0;
   padding-right: 0;
+}
+.package {
+  margin-top: 100px;
+}
+.packageContainer {
+  padding: 0;
+}
+.packageContainerRight,
+.packageContainerLeft {
+  min-width: 100%;
+}
+.packageContainerRight img,
+.packageContainerLeft img {
+  min-width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+}
+.packageCenter {
+  width: 50%;
+  margin: 0;
+}
+.packageContainerCenter {
+  margin: 0;
+}
+.packageCenterTop {
+  margin-bottom: 0;
 }
 .menuSlider .slick-lists.draggable{
   padding: 0 !important;
