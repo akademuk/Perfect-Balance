@@ -76,7 +76,7 @@ body {
   overflow: hidden;
 }
 header {
-  position: absolute;
+  position: fixed;
   max-width: 100%;
   top: 32px;
   left: 88px;
@@ -89,6 +89,7 @@ header {
   backdrop-filter: blur(25px);
   border-radius: 10px;
   box-sizing: border-box;
+  z-index: 100;
 }
 .containerContact {
   display: flex;
@@ -225,6 +226,18 @@ h1 span {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+.benefitsContainer:hover {
+  background: #F7DB50;
+  cursor: pointer;
+}
+.menuSliderContainer:hover {
+  box-shadow: 0px 0px 10px #F7DB50;
+  cursor: pointer;
+}
+.fadeContainer:hover {
+  box-shadow: 0px 0px 10px #F7DB50;
+  cursor: pointer;
 }
 .benefitsContainer svg {
   min-height: 54px;
