@@ -1349,6 +1349,7 @@ form input {
 }
 .cashContainerTop button {
   font-size: 14px;
+  z-index: 10;
 }
 }
 @media (max-width: 576px) {
@@ -1464,7 +1465,7 @@ header {
   padding: 18px 10px;
 }
 .menuSliderContainer.slick-slide {
-  margin: 0 8px;
+  margin: 0 12px;
 }
 .menuContainer {
   padding: 8px 8px 60px 8px;
@@ -1513,8 +1514,8 @@ h6 {
   height: 675px;
 }
 .fadeContainer {
-  min-width: 12%;
-  max-width: 12%;
+  min-width: 300px;
+  max-width: 300px;
 }
 .businessModelContainerRight h3 {
   font-size: 24px;
