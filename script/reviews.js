@@ -1,17 +1,17 @@
 $('.reviewsSlider').slick({
         infinite: true,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
             {
-              breakpoint: 1800,
+              breakpoint: 1920,
               settings: {
-                slidesToShow: 4,
+                slidesToShow: 5,
                 slidesToScroll: 1
               },
             },
             {
-              breakpoint: 1400,
+              breakpoint: 1600,
               settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1
@@ -34,8 +34,9 @@ $('.reviewsSlider').slick({
              {
               breakpoint: 600,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                centerMode:true
               },
             },
           ],
