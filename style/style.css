@@ -3,70 +3,70 @@
     font-style: normal;
     font-weight: 400;
       src: local("FontsFree"),
-           url("/fonts/FontsFree-Net-SFProDisplay-Regular.woff2") format("woff2"),
-           url("/fonts/FontsFree-Net-SFProDisplay-Regular.woff") format("woff");
+           url("../fonts/FontsFree-Net-SFProDisplay-Regular.woff2") format("woff2"),
+           url("../fonts/FontsFree-Net-SFProDisplay-Regular.woff") format("woff");
 }
 @font-face {
     font-family: "Montserrat-Regular";
     font-style: normal;
     font-weight: 400;
       src: local("Montserrat Regular"),
-           url("/fonts/Montserrat-Regular.woff2") format("woff2"),
-           url("/fonts/kaushanscript.woff") format("woff");
+           url("../fonts/Montserrat-Regular.woff2") format("woff2"),
+           url("../fonts/kaushanscript.woff") format("woff");
 }
 @font-face {
     font-family: "Montserrat-Medium";
     font-style: normal;
     font-weight: 500;
       src: local("Montserrat Medium"),
-           url("/fonts/Montserrat-Medium.woff2") format("woff2"),
+           url("../fonts/Montserrat-Medium.woff2") format("woff2"),
 }
 @font-face {
     font-family: "Montserrat-SemiBold";
     font-style: normal;
     font-weight: 600;
       src: local("Montserrat SemiBold"),
-           url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
+           url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
 }
 @font-face {
     font-family: "Montserrat-Bold";
     font-style: normal;
     font-weight: 700;
       src: local("Montserrat Bold"),
-           url("/fonts/Montserrat-Bold.woff2") format("woff2"),
-           url("/fonts/Montserrat-Bold.woff") format("woff");
+           url("../fonts/Montserrat-Bold.woff2") format("woff2"),
+           url("../fonts/Montserrat-Bold.woff") format("woff");
 }
 @font-face {
     font-family: "Montserrat-ExtraBold";
     font-style: normal;
     font-weight: 800;
       src: local("Montserrat ExtraBold"),
-           url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
-           url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+           url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+           url("../fonts/Montserrat-ExtraBold.woff") format("woff");
 }
 @font-face {
     font-family: "Inter-Light";
     font-style: normal;
     font-weight: 300;
       src: local("Inter Light"),
-           url("/fonts/Inter-Light.woff2") format("woff2"),
-           url("/fonts/Inter-Light.woff") format("woff");
+           url("../fonts/Inter-Light.woff2") format("woff2"),
+           url("../fonts/Inter-Light.woff") format("woff");
 }
 @font-face {
     font-family: "Inter-Regular";
     font-style: normal;
     font-weight: 400;
       src: local("Inter Regular"),
-           url("/fonts/Inter-Regular.woff2") format("woff2"),
-           url("/fonts/Inter-Regular.woff") format("woff");
+           url("../fonts/Inter-Regular.woff2") format("woff2"),
+           url("../fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
     font-family: "Inter-ExtraBold";
     font-style: normal;
     font-weight: 800;
       src: local("Inter ExtraBold"),
-           url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
-           url("/fonts/Inter-ExtraBold.woff2") format("woff");
+           url("../fonts/Inter-ExtraBold.woff2") format("woff2"),
+           url("../fonts/Inter-ExtraBold.woff2") format("woff");
 }
 body {
   font-family: "Montserrat-Regular";
