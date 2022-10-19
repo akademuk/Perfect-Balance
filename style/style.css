@@ -905,6 +905,9 @@ form {
   margin-bottom: 50px;
   width: 70%;
 }
+.cashInvestmentsRight  {
+  font-size: 45px;
+}
 }
 @media (max-width: 1300px) {
   form {
@@ -914,6 +917,16 @@ form {
     min-width: 50%;
     max-width: 50%;
     margin-bottom: 16px;
+  }
+  .cashInvestmentsContainer {
+    flex-direction: column;
+  }
+  .cashInvestmentsLeft {
+    width: 90%;
+  }
+  .cashInvestmentsRight {
+    width: 90%;
+    margin-top: 50px;
   }
 }
 @media (min-width: 1440px) {
@@ -929,6 +942,17 @@ form {
 .deliciousContainerCenter img{
   max-width: 120%;
   min-width: 120%
+}
+.cashInvestments {
+  max-width: 1500px;
+}
+.businessModel {
+  max-width: 1500px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.businessModelContainerLeft {
+  width: 45%;
 }
 }
 @media (max-width: 1200px) {
@@ -999,6 +1023,13 @@ form {
 }
 .bannerContainer {
   max-width: 500px;
+}
+.cashInvestmentsLeft {
+  flex-wrap: wrap;
+}
+.cashContainer {
+  max-width: 45%;
+  width: 100%;
 }
 .form {
   padding: 100px 50px;
@@ -1228,6 +1259,21 @@ header {
 .menuSliderContainer {
   max-width: 223px !important;
   min-width: 223px !important;
+}
+.cashContainer {
+  max-width: 223px !important;
+  min-width: 223px !important;
+  min-height: 230px;
+  height: 100%;
+}
+.cashInvestmentsContainer {
+  overflow: hidden;
+}
+.cashInvestmentsRight p {
+  font-size: 32px;
+}
+.cashInvestmentsRight button {
+  padding: 18px 10px;
 }
 .menuSliderContainer.slick-slide {
   margin: 0 8px;
