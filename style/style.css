@@ -1568,11 +1568,18 @@ h6 {
 .fade {
   max-width: 100vw;
   overflow: hidden;
-  height: 675px;
+  height: 720px;
 }
 .fadeContainer {
   min-width: 300px;
   max-width: 300px;
+}
+.menuSlider .slick-list .slick-track {
+  min-height: 500px;
+  padding-top: 30px;
+}
+.businessModel {
+  padding-bottom: 0 !important;
 }
 .businessModelContainerRight h3 {
   font-size: 24px;
@@ -1684,6 +1691,7 @@ h1 span {
 }
 .benefitsContainer {
   padding: 32px 16px;
+  min-height: 250px;
 }
 .deliciousContainer {
   padding: 0;

@@ -69,22 +69,6 @@
         top: 0%;
     }
 }
-.box-container {
-    position: absolute;
-    top: 66px;
-    right: 7%;
-    width: 46px;
-    height: 46px;
-    z-index: 10;
-}
-.birger-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 46px;
-    height: 46px;
-    cursor: pointer;
-}
 .birger-button  span {
     display: block;
     width: 30px;
