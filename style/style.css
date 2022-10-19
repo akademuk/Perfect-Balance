@@ -191,6 +191,9 @@ h1 span {
 }
 .bannerContainer p span {
   color: #F7DB50;
+  font-family: "Montserrat-Medium";
+  font-size: 18px;
+  line-height: 120%;
 }
 .btnRequest {
   background: #F7DB50;
@@ -958,12 +961,53 @@ form {
   width: 67%;
 }
 }
-@media (max-width: 1680px) {
+@media (max-width: 1600px) {
   .reviewsSlider {
     max-width: 90%;
     min-width: 90%;
     box-sizing: border-box;
   }
+  .delicious {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .maps {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .businessModel {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .form {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .fadeContainer {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .menuSliderContainer {
+    max-width: 500px;
+    min-width: 500px;
+  }
+  .reviewsContent {
+    min-width: 285px;
+  }
+  .package {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .cashInvestments {
+    max-width: 100%;
+    min-width: 100%;
+  }
+}
+@media (max-width: 1400px) {
+.form input {
+  max-width: 200px;
+  min-width: 20px;
+}
 }
 @media (max-width: 1300px) {
   form {
