@@ -1,6 +1,6 @@
 if (window.matchMedia("(max-width: 576px)").matches) {
     $('.fade').slick({
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,               
         dots: false,
         arrows:false,
