@@ -1219,9 +1219,20 @@ footer h2 {
 .form input {
   max-width: 50%;
   min-width: 50%;
+  box-sizing: border-box;
 }
 .cashContainer p {
   min-height: 65px;
+}
+.formWrapper form {
+  flex-direction: column;
+}
+.formWrapper form input {
+  margin-bottom: 16px;
+}
+.submit {
+  min-width: 50%;
+  max-width: 50%;
 }
 }
 @media (max-width: 1300px) {
