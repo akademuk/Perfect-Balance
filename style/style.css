@@ -1421,6 +1421,9 @@ header {
 .banner {
   padding: 150px 50px 123px 50px;
 }
+.formWrapper form {
+  width: 100% !important;
+}
 .bannerContainer {
   max-width: 500px;
 }
