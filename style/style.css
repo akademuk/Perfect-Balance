@@ -646,7 +646,7 @@ h6 {
 }
 .reviewsContent {
   max-width: 322px;
-  height: 322px;
+  height: 360px;
   background: rgba(66, 66, 66, 0.95);
   backdrop-filter: blur(10px);
   border-radius: 10px;
@@ -846,6 +846,9 @@ form {
   font-size: 18px;
   line-height: 170%;
   color: #FFFFFF;
+}
+.businessModelTittle h3 {
+  text-align: center;
 }
 .packageBtn {
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.75));
@@ -1214,8 +1217,8 @@ footer h2 {
 }
 @media (max-width: 1400px) {
 .form input {
-  max-width: 200px;
-  min-width: 20px;
+  max-width: 50%;
+  min-width: 50%;
 }
 .cashContainer p {
   min-height: 65px;
@@ -1660,6 +1663,9 @@ footer {
 }
 footer {
   max-height: 100%;
+}
+.reviews {
+  padding-left: 0;
 }
 }
 @media (max-width: 576px) {
