@@ -1,6 +1,7 @@
 $('.reviewsSlider').slick({
         infinite: true,
         slidesToShow: 5,
+        arrows: true,
         slidesToScroll: 1,
         responsive: [
             {
