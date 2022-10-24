@@ -639,7 +639,16 @@ h6 {
   align-items: center;
   justify-content: flex-end;
 }
+.reviewsContainer p {
+  max-height: 185px;
+  min-width: 185px;
+  overflow: hidden;
+}
 .reviewsContainer > img {
+  max-width: 90%;
+  height: 432px;
+  border-radius: 10px;
+  width: 100%;
   position: absolute;
   bottom: 0;
   z-index: -1;
@@ -674,7 +683,7 @@ h6 {
 .reviewsContainer:hover > img{
   z-index: 50;
   cursor: pointer;
-  transform: scale(1.3);
+  transform: scale(1.1);
   bottom: 60px;
 }
 .reviewsFooter {
@@ -1096,6 +1105,112 @@ footer h2 {
 .footerBotom img {
   margin-bottom: -10px;
 }
+.popup__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  opacity: 0; 
+  pointer-events: none; 
+  transition: 0.5s all;
+  z-index: 101;
+}
+.popup__bg.active { 
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.5s all;
+}
+.popupForm {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 620px;
+}
+.popupForm input{
+  min-width: 301px;
+  max-width: 301px;
+  height: 56px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: url(../img/Art1.png), #424242; 
+  background-repeat: no-repeat;
+  background-blend-mode: luminosity;
+  background-size: cover;
+  background-position-x: 0;
+  background-position-y: 175px;
+  width: 746px;
+  height: max-content;
+  padding: 64px;
+  box-sizing: border-box;
+  transition: 0.5s all;
+}
+.popupContent {
+  text-align: center;
+}
+.poppupTittle {
+  font-family: "Montserrat-SemiBold";
+  font-size: 36px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.popupContent p:nth-of-type(2) {
+  font-family: "Montserrat-Regular";
+  font-size: 18px;
+  line-height: 170%;
+  color: #FFFFFF;
+  margin-bottom: 43px;
+}
+.popup.active { 
+  transform: translate(-50%, -50%) scale(1);
+  transition: 0.5s all;
+}
+.close-popup {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+}
+.close-popup path {
+  fill: #fff;
+}
+.popupForm .popupSubmit {
+  filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.75));
+  border: none;
+  padding: 16px;
+  background: #F7DB50;
+  border-radius: 10px;
+  font-family: "Montserrat-Medium";
+  font-size: 16px;
+  line-height: 20px;
+  color: #292929;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: max-content !important;
+  max-width: max-content !important;
+  padding-left: 60px;
+}
+.inputBtn {
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+.inputBtn svg{
+ position: absolute;
+ top: 16px;
+ left: 25px;
+ z-index: 101;
+}
 @media (max-width: 1920px) {
 .delicious {
   max-width: 1500px;
@@ -1239,6 +1354,9 @@ footer h2 {
   form {
     flex-direction: column;
   }
+  .deliciousContainer {
+    height: 100%;
+  }
   form input {
     min-width: 50%;
     max-width: 50%;
@@ -1344,6 +1462,9 @@ header {
 .logotype p {
   display: none;
 }
+.reviewsContainer > img {
+  max-width: 70%;
+}
 .containerContact {
   width: 70%;
 }
@@ -1421,8 +1542,25 @@ header {
 .banner {
   padding: 150px 50px 123px 50px;
 }
+.popup {
+  width: 500px;
+}
+.reviewsContainer > img {
+  max-width: 70%;
+}
+.popupForm  {
+  width: 100%;
+}
+.reviewsSlider {
+  margin-left: 0;
+}
 .formWrapper form {
-  width: 100% !important;
+  width: 50% !important;
+  margin: 0 auto;
+}
+.packageBtn {
+  width: max-content;
+  padding: 16px;
 }
 .bannerContainer {
   max-width: 500px;
@@ -1511,6 +1649,14 @@ footer {
 .footerContainerRight {
   width: 50%;
 }
+.deliciousContainerCenter img{
+  max-width: 75%;
+}
+.deliciousContainerCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 @media (max-width: 768px) {
 .banner {
@@ -1518,10 +1664,30 @@ footer {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  background-blend-mode: luminosity;
   height: auto;
   padding: 68px 16px 500px 16px;
   display: flex;
   align-items: flex-start;
+}
+.popup {
+  padding: 64px 16px 100px 16px;
+  width: 80%;
+}
+.popupContent p:nth-of-type(2) {
+  font-size: 16px;
+}
+.close-popup {
+  top: 16px;
+  right: 16px;
+}
+.popupForm input {
+  min-width: 100%;
+  max-width: 100%;
+}
+.poppupTittle {
+  font-size: 24px;
+  margin-bottom: 16px;
 }
 .bannerContainer {
   max-width: 100%;
@@ -1691,6 +1857,9 @@ header {
 }
 .deliciousContainerCenter img {
   max-width: 100%;
+}
+.formWrapper form {
+  width: 100% !important;
 }
 .reviewsContent {
   height: 319px;
@@ -1881,6 +2050,9 @@ form input {
 .packageBtn {
   margin-top: 32px;
   width: 100%;
+}
+.businessModelTittle {
+  padding: 0 16px;
 }
 .cashInvestments .businessModelTittle {
   padding-left: 16px;
@@ -2102,7 +2274,7 @@ h1 span {
 }
 .benefitsContainer {
   padding: 32px 16px;
-  min-height: 185px;
+  min-height: 225px;
 }
 .deliciousContainer {
   padding: 0;
